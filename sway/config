@@ -245,5 +245,6 @@ for_window [app_id="pavucontrol"] floating enable, resize set 500 500
 exec wl-paste -t text --watch clipman store --no-persist
 exec gammastep -l 15:120
 exec blueman-manager
+exec fcitx5
 
 include /etc/sway/config.d/*

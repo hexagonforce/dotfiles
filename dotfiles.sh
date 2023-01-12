@@ -9,4 +9,6 @@ for f ($xdg_dotfiles){
 rm "$CONFIG_DIR/$f"
 ln -s "$PWD/$f" "$CONFIG_DIR/$f"
 }
+rm "$HOME/.zshrc"
+ln -s "$PWD/zshrc" "$HOME/.zshrc"
 

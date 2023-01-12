@@ -1,28 +1,21 @@
 # If you come from bash you might have to change your $PATH.
-export PATH=$HOME/bin:/usr/local/bin:$PATH
-# export XDG_DATA_HOME=/var/lib/flatpak/exports/share$XDG_DATA_HOME
-
-EDITOR=/usr/bin/vim
+PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # The next line updates PATH for the Google Cloud SDK.
-if [ -f '/home/syoo/google-cloud-sdk/path.bash.inc' ]; then . '/home/syoo/google-cloud-sdk/path.zsh.inc'; fi
+if [ -f "$HOME/google-cloud-sdk/path.bash.inc" ]; then . "$HOME/google-cloud-sdk/path.zsh.inc"; fi
 
 # The next line enables shell command completion for gcloud.
-if [ -f '/home/syoo/google-cloud-sdk/completion.bash.inc' ]; then . '/home/syoo/google-cloud-sdk/completion.zsh.inc'; fi
+if [ -f "$HOME/google-cloud-sdk/completion.bash.inc" ]; then . "$HOME/google-cloud-sdk/completion.zsh.inc"; fi
 
 if ! [[ "$PATH" =~ "$HOME/.local/bin:$HOME/bin:" ]]
 then
     PATH="$HOME/.local/bin:$HOME/bin:$PATH"
 fi
+PATH="$HOME/projects/linux-scripts:$PATH"
+
 export PATH
 
-[[ $(pgrep ibus-daemon) ]] || ibus-daemon --xim --daemonize -r
-export GLFW_IM_MODULE=ibus
-export GTK_IM_MODULE=ibus
-export INPUT_METHOD=ibus
-export XMODIFIERS=@im=ibus
-export IMSETTINGS_MODULE=ibus
-export QT_IM_MODULE=ibus
+export EDITOR=/usr/bin/vim
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
@@ -49,7 +42,7 @@ ZSH_THEME="awesomepanda"
 # Uncomment one of the following lines to change the auto-update behavior
 # zstyle ':omz:update' mode disabled  # disable automatic updates
 # zstyle ':omz:update' mode auto      # update automatically without asking
-# zstyle ':omz:update' mode reminder  # just remind me to update when it's time
+zstyle ':omz:update' mode reminder  # just remind me to update when it's time
 
 # Uncomment the following line to change how often to auto-update (in days).
 # zstyle ':omz:update' frequency 13
