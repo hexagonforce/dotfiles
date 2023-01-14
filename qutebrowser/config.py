@@ -6,3 +6,4 @@ config.bind('<Ctrl+Shift+p>', 'hint links spawn --detach mpv --no-video --force-
 config.bind('<Ctrl+i>', 'hint images download')
 config.bind('J', 'tab-prev')
 config.bind('K', 'tab-next')
+config.load_autoconfig(False)
