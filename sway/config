@@ -14,7 +14,7 @@ set $down j
 set $up k
 set $right l
 # Your preferred terminal emulator
-set $term kitty 
+set $term foot 
 # Your preferred application launcher
 # Note: pass the final command to swaymsg so that the resulting window can be opened
 # on the original workspace that the command was run on.
@@ -225,18 +225,9 @@ bindsym XF86Search exec $menu
 #
 # Read `man 5 sway-bar` for more information about this section.
 bar {
-    position top
-
-    # When the status_command prints a new line to stdout, swaybar updates.
-    # The default just shows the current date and time.
-    status_command i3status
-
-    colors {
-        statusline #ffffff
-        background #323232
-        inactive_workspace #32323200 #32323200 #5c5c5c
-    }
+    swaybar_command waybar
 }
+
 
 #
 # Floating window by default
@@ -249,7 +240,9 @@ for_window [app_id="pavucontrol"] floating enable, resize set 600 400
 #
 exec wl-paste -t text --watch clipman store --no-persist
 exec gammastep -l 15:120
+exec lxpolkit
+exec pcloud
 exec blueman-applet
 exec fcitx5
-exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
+
 include /etc/sway/config.d/*
