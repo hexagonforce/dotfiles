@@ -23,7 +23,7 @@ set $menu wofi --show drun | xargs swaymsg exec --
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-output * bg /usr/share/backgrounds/default.png fill
+output * bg ~/Pictures/wallpapers/CODENAME_UJUNG_03.jpg fill
 #
 # Example configuration:
 #

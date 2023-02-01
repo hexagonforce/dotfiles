@@ -19,3 +19,5 @@ ln -s "$PWD/$f" "$CONFIG_DIR/$f"
 rm "$HOME/.zshrc"
 ln -s "$PWD/zshrc" "$HOME/.zshrc"
 
+rm "$HOME/.vimrc"
+ln -s "$PWD/vimrc" "$HOME/.vimrc"

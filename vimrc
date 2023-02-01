@@ -16,7 +16,7 @@ set shiftwidth=4
 set expandtab
 
 set scrolloff=10
-set nowrap
+set wrap linebreak
 
 " search settings
 set incsearch
