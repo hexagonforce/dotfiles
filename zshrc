@@ -17,6 +17,11 @@ export PATH
 
 export EDITOR=/usr/bin/vim
 
+# Aliases
+new_sol(){
+    cp "$HOME/Templates/template.cpp" $1.cpp
+}
+
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 

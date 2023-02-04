@@ -1,12 +1,8 @@
 set nocompatible
 
-filetype on
-
-filetype plugin on
-filetype plugin indent on
-filetype indent on
-
 syntax on
+filetype indent on
+filetype plugin indent on
 
 set number
 set cursorline
