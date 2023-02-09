@@ -246,6 +246,7 @@ bar {
 for_window [app_id="mpv"] floating enable, resize set 1440 810
 for_window [app_id="blueman-manager"] floating enable, resize set 500 500
 for_window [app_id="pavucontrol"] floating enable, resize set 600 400
+for_window [app_id="zoom"] floating enable
 #
 # Executions
 #
