@@ -182,7 +182,7 @@ input 1133:49298:Logitech_G102_LIGHTSYNC_Gaming_Mouse_Keyboard {
 gaps inner 4
 gaps outer 4
 smart_gaps on
-default_border pixel 5 
+default_border pixel 2 
 smart_borders on
 # set $borderwitdh 1
 # hide_edge_borders both
@@ -238,11 +238,10 @@ bindsym XF86MonBrightnessUp exec brightnessctl set 5%+
 # bindsym XF86AudioNext exec playerctl next
 # bindsym XF86AudioPrev exec playerctl previous
 bindsym XF86Search exec $menu
-bindsym XF86AudioPlay exec "mpc toggle"
-bindsym XF86AudioStop exec "mpc stop"
-bindsym XF86AudioNext exec "mpc next"
-bindsym XF86AudioPrev exec "mpc prev"
-bindsym XF86AudioPause exec "mpc pause"
+bindsym $mod+p exec "mpc toggle"
+bindsym $mod+Shift+p exec "mpc stop"
+bindsym $mod+period exec "mpc next"
+bindsym $mod+comma exec "mpc prev"
 
 #
 # Custom keyboard bindings
