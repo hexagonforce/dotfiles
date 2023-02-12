@@ -1,5 +1,5 @@
 # If you come from bash you might have to change your $PATH.
-PATH=$HOME/bin:/usr/local/bin:$PATH
+PATH=/usr/local/texlive/2022/bin/x86_64-linux:$HOME/bin:/usr/local/bin:$PATH
 
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f "$HOME/google-cloud-sdk/path.bash.inc" ]; then . "$HOME/google-cloud-sdk/path.zsh.inc"; fi

@@ -8,6 +8,7 @@ xdg_dotfiles=("mpv/input.conf" "ranger/rc.conf" "ranger/rifle.conf")
 xdg_dotfiles+=("sway/config" "wofi/style.css" "zathura/zathurarc")
 xdg_dotfiles+=("waybar/config" "waybar/style.css")
 xdg_dotfiles+=("foot/foot.ini")
+xdg_dotfiles+=("mpd/mpd.conf")
 
 for file ($xdg_dotfiles){
     if [[ -f "$file" ]]; then
