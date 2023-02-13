@@ -182,8 +182,8 @@ input 1133:49298:Logitech_G102_LIGHTSYNC_Gaming_Mouse_Keyboard {
 gaps inner 4
 gaps outer 4
 smart_gaps on
-default_border pixel 2 
 smart_borders on
+
 # set $borderwitdh 1
 # hide_edge_borders both
 
@@ -248,6 +248,11 @@ bindsym $mod+comma exec "mpc prev"
 #
 bindsym Shift+Alt+Print exec grim -g "$(slurp)" - | wl-copy  
 
+set $gnome-schema org.gnome.desktop.interface
+exec_always {
+    gsettings set $gnome-schema gtk-theme 'Dracula'
+}
+
 #
 # Status Bar:
 #
@@ -269,8 +274,8 @@ for_window [app_id="zoom"] floating enable
 #
 exec wl-paste -t text --watch clipman store --no-persist
 exec gammastep -l 15:120
-exec --no-startup-id /usr/libexec/polkit-gnome-authentication-agent-1
 exec pcloud
+exec --no-startup-id /usr/libexec/polkit-gnome-authentication-agent-1
 exec blueman-applet
 exec fcitx5
 

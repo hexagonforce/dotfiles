@@ -1,6 +1,8 @@
 * {
     /* `otf-font-awesome` is required to be installed for icons */
     /*font-family: FontAwesome, Roboto, Helvetica, Arial, sans-serif;*/
+    border: none;
+    border-radius: 4px;
     font-family: Inconsolata, monospace;
     font-size: 13px;
 }
@@ -11,6 +13,7 @@ window#waybar {
     color: #ffffff;
     transition-property: background-color;
     transition-duration: .5s;
+    border-radius: 0;
 }
 
 window#waybar.hidden {
@@ -90,7 +93,8 @@ button:hover {
 #scratchpad,
 #mpd {
     padding: 0 10px;
-    color: #ffffff;
+    margin: 6px 3px;
+    color: #333333;
 }
 
 #window,
@@ -109,17 +113,16 @@ button:hover {
 }
 
 #clock {
-    background-color: #64727D;
+    background-color: #bbccdd;
 }
 
 #battery {
-    background-color: #ffffff;
-    color: #000000;
+    background-color: #aabbcc;
+    color: #333333;
 }
 
 #battery.charging, #battery.plugged {
-    color: #ffffff;
-    background-color: #26A65B;
+    background-color: #bbccdd;
 }
 
 @keyframes blink {
@@ -149,7 +152,7 @@ label:focus {
 }
 
 #memory {
-    background-color: #9b59b6;
+    background-color: #bbccdd;
 }
 
 #disk {
@@ -157,11 +160,11 @@ label:focus {
 }
 
 #backlight {
-    background-color: #90b1b1;
+    background-color: #bbccdd;
 }
 
 #network {
-    background-color: #2980b9;
+    background-color: #bbccdd;
 }
 
 #network.disconnected {
@@ -169,8 +172,8 @@ label:focus {
 }
 
 #pulseaudio {
-    background-color: #f1c40f;
-    color: #000000;
+    background-color: #bbccdd;
+    color: #333333;
 }
 
 #pulseaudio.muted {
@@ -202,7 +205,7 @@ label:focus {
 }
 
 #temperature {
-    background-color: #f0932b;
+    background-color: #bbccdd;
 }
 
 #temperature.critical {
@@ -210,7 +213,7 @@ label:focus {
 }
 
 #tray {
-    background-color: #2980b9;
+    background-color: #bbccdd;
 }
 
 #tray > .passive {
@@ -223,29 +226,30 @@ label:focus {
 }
 
 #idle_inhibitor {
-    background-color: #2d3436;
+    background-color: #bbccdd;
 }
 
 #idle_inhibitor.activated {
-    background-color: #ecf0f1;
-    color: #2d3436;
+    background-color: #443322;
+    color: #FFFFFF;
 }
 
 #mpd {
-    background-color: #66cc99;
+    background-color: #bbccdd;
     color: #2a5c45;
 }
 
 #mpd.disconnected {
-    background-color: #f53c3c;
+    background-color: #334455;
+    color: #ffffff;
 }
 
 #mpd.stopped {
-    background-color: #90b1b1;
+    background-color: #aabbcc;
 }
 
 #mpd.paused {
-    background-color: #51a37a;
+    background-color: #aabbcc;
 }
 
 #language {

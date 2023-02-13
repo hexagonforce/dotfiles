@@ -14,9 +14,8 @@ fi
 PATH="$HOME/projects/linux-scripts:$PATH"
 
 export PATH
-
-export EDITOR=/usr/bin/vim
-
+export EDITOR=/usr/bin/nvim
+export VISUAL=/usr/bin/nvim
 # Aliases
 new_sol(){
     cp "$HOME/Templates/template.cpp" $1.cpp
