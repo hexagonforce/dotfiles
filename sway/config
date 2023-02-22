@@ -246,7 +246,7 @@ bindsym $mod+comma exec "mpc prev"
 #
 # Custom keyboard bindings
 #
-bindsym $mod+Print exec grim -g "$(slurp)" "$HOME/Pictures/Screenshots/Screenshot from $(date +%Y-%m-%d\ %H:%M:%S).png"| wl-copy  
+bindsym $mod+Print exec grim -g "$(slurp)" "$HOME/Pictures/Screenshots/Screenshot from $(date +%Y-%m-%d\ %H:%M:%S).png" | wl-copy  
 bindsym Print exec grim -t png "$HOME/Pictures/Screenshots/Screenshot from $(date +%Y-%m-%d\ %H:%M:%S).png"
 
 #

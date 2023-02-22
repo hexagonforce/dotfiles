@@ -10,7 +10,6 @@ xdg_dotfiles+=("zathura/zathurarc")
 xdg_dotfiles+=("waybar/config" "waybar/style.css")
 xdg_dotfiles+=("foot/foot.ini")
 xdg_dotfiles+=("mpd/mpd.conf")
-xdg_dotfiles+=("nvim/init.lua")
 
 CONFIG_HOME=$HOME/.config
 for file ($xdg_dotfiles){
@@ -28,3 +27,7 @@ ln -s "$PWD/zshrc" "$HOME/.zshrc"
 
 rm "$HOME/.gitconfig"
 ln -s "$PWD/gitconfig" "$HOME/.gitconfig"
+
+# Nvim experimentation
+rm -r "$CONFIG_HOME/nvim"
+ln -s "$PWD/nvim" "$CONFIG_HOME/"

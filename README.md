@@ -4,15 +4,16 @@
 zsh
 sway
 ranger
-kitty
+foot
 fcitx5
 fcitx5-hangul
-qutebrowser
 mpv
+mpd
 wofi
 zathura
-vim
+nvim
 git
+
 
 
 ## Usage

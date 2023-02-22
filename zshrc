@@ -1,4 +1,5 @@
 # If you come from bash you might have to change your $PATH.
+
 PATH=/usr/local/texlive/2022/bin/x86_64-linux:$HOME/bin:/usr/local/bin:$PATH
 
 # The next line updates PATH for the Google Cloud SDK.
@@ -13,13 +14,17 @@ then
 fi
 PATH="$HOME/projects/linux-scripts:$PATH"
 
+if [ -d "/var/lib/flatpak/exports/bin" ] ; then
+    PATH="/var/lib/flatpak/exports/bin:$PATH"
+fi
+
 export PATH
 export EDITOR=/usr/bin/nvim
 export VISUAL=/usr/bin/nvim
+
+export NEW_SOL="$HOME/Templates/template.cpp"
 # Aliases
-new_sol(){
-    cp "$HOME/Templates/template.cpp" $1.cpp
-}
+alias rg=ranger
 
 ### ZSH HOME
 export ZSH=$HOME/.zsh
