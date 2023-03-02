@@ -1,33 +1,23 @@
 #! /usr/bin/zsh
 
 # Files inside the normal xdg .config directory
-
-xdg_dotfiles=("mpv/input.conf")
-xdg_dotfiles+=("ranger/rc.conf" "ranger/rifle.conf")
-xdg_dotfiles+=("sway/config")
-xdg_dotfiles+=("wofi/style.css")
-xdg_dotfiles+=("zathura/zathurarc")
-xdg_dotfiles+=("waybar/config" "waybar/style.css")
-xdg_dotfiles+=("foot/foot.ini")
-xdg_dotfiles+=("mpd/mpd.conf")
+xdg_dotfiles=("mpv" "ranger" "sway" "wofi" "zathura" "waybar" "foot" "mpd" "nvim" "qutebrowser")
 
 CONFIG_HOME=$HOME/.config
-for file ($xdg_dotfiles){
-    if [[ -f "$CONFIG_HOME/$file" ]]; then
-        rm "$CONFIG_HOME/$file"
+for folder ($xdg_dotfiles){
+    if [[ -d "$CONFIG_HOME/$folder" ]]; then
+        rm -r "$CONFIG_HOME/$folder"
     fi
-    mkdir -p "$CONFIG_HOME/$(dirname $file)"
-    ln -s "$PWD/$file" "$CONFIG_HOME/$file"
+    ln -s "$PWD/$folder" "$CONFIG_HOME/"
 }
 
 # Individual configuration files
 
-rm "$HOME/.zshrc"
-ln -s "$PWD/zshrc" "$HOME/.zshrc"
+dotfiles=("zshrc" "zshenv" "gitconfig")
+for file ($dotfiles){
+    if [[ -f "$HOME/.$file" ]]; then
+        rm "$HOME/.$file"
+    fi
+    ln -s "$PWD/$file" "$HOME/.$file"
+}
 
-rm "$HOME/.gitconfig"
-ln -s "$PWD/gitconfig" "$HOME/.gitconfig"
-
-# Nvim experimentation
-rm -r "$CONFIG_HOME/nvim"
-ln -s "$PWD/nvim" "$CONFIG_HOME/"
