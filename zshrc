@@ -25,6 +25,7 @@ export VISUAL=/usr/bin/nvim
 export NEW_SOL="$HOME/Templates/template.cpp"
 # Aliases
 alias rg=ranger
+alias vim=nvim
 
 ### ZSH HOME
 export ZSH=$HOME/.zsh
@@ -35,6 +36,7 @@ source $ZSH/themes/spaceship-prompt/spaceship.zsh-theme
 #### --- Spaceship Config ------------------------------------
 #
 SPACESHIP_PROMPT_ORDER=(
+venv
 user          # Username section
 dir           # Current directory section
 host          # Hostname section

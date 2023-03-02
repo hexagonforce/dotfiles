@@ -18,7 +18,7 @@ set $term foot
 # Your preferred application launcher
 # Note: pass the final command to swaymsg so that the resulting window can be opened
 # on the original workspace that the command was run on.
-set $menu wofi --show drun | xargs swaymsg exec --
+set $menu wofi --show drun -I | xargs swaymsg exec --
 
 ### Output configuration
 #
@@ -248,6 +248,7 @@ bindsym $mod+comma exec "mpc prev"
 #
 bindsym $mod+Print exec grim -g "$(slurp)" "$HOME/Pictures/Screenshots/Screenshot from $(date +%Y-%m-%d\ %H:%M:%S).png" | wl-copy  
 bindsym Print exec grim -t png "$HOME/Pictures/Screenshots/Screenshot from $(date +%Y-%m-%d\ %H:%M:%S).png"
+bindsym $mod+y exec mpv "$(wl-paste)"
 
 #
 # Status Bar:
@@ -263,6 +264,7 @@ bar {
 #
 for_window [app_id="mpv"] floating enable, resize set 1440 810
 for_window [app_id="blueman-manager"] floating enable, resize set 500 500
+for_window [app_id="blueberry"] floating enable, resize set 500 500
 for_window [app_id="pavucontrol"] floating enable, resize set 600 400
 for_window [app_id="zoom"] floating enable
 #
