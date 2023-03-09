@@ -1,5 +1,4 @@
-# If you come from bash you might have to change your $PATH.
-
+# Variables
 PATH=/usr/local/texlive/2022/bin/x86_64-linux:$HOME/bin:/usr/local/bin:$PATH
 
 # The next line updates PATH for the Google Cloud SDK.
@@ -21,8 +20,10 @@ fi
 export PATH
 export EDITOR=/usr/bin/nvim
 export VISUAL=/usr/bin/nvim
-
 export NEW_SOL="$HOME/Templates/template.cpp"
+export GEM_HOME="$HOME/.gems/"
+export PATH="$HOME/.gems/bin:$PATH"
+
 # Aliases
 alias rg=ranger
 alias vim=nvim
