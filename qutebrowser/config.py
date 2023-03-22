@@ -1,9 +1,11 @@
 config.load_autoconfig()
 
-config.bind('J', 'tab-prev')
-config.bind('K', 'tab-next')
-config.bind(',v', 'hint links spawn mpv "{hint-url}"')
-config.bind(',g', 'hint images download')
+config.bind('J', 'back')
+config.bind('K', 'forward')
+config.bind('H', 'tab-prev')
+config.bind('L', 'tab-next')
+config.bind(';v', 'hint links spawn mpv "{hint-url}"')
+config.bind(';g', 'hint images download')
 
 config.set('downloads.location.prompt', False)
 tab_bg_color = '#6272A4'

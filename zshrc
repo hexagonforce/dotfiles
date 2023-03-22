@@ -26,7 +26,6 @@ export PATH="$HOME/.gems/bin:$PATH"
 
 # Aliases
 alias rg=ranger
-alias vim=nvim
 
 ### ZSH HOME
 export ZSH=$HOME/.zsh
