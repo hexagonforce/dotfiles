@@ -91,8 +91,9 @@ button:hover {
 #mode,
 #idle_inhibitor,
 #scratchpad,
-#mpd {
-    padding: 0 10px;
+#mpd,
+#language {
+    padding: 3px 5px;
     margin: 6px 3px;
     color: #333333;
 }
@@ -253,11 +254,7 @@ label:focus {
 }
 
 #language {
-    background: #00b093;
-    color: #740864;
-    padding: 0 5px;
-    margin: 0 5px;
-    min-width: 16px;
+    background-color: #bbccdd;
 }
 
 #keyboard-state {

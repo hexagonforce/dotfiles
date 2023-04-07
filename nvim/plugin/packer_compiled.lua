@@ -113,6 +113,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/syoo/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
+  },
+  vimwiki = {
+    loaded = true,
+    path = "/home/syoo/.local/share/nvim/site/pack/packer/start/vimwiki",
+    url = "https://github.com/vimwiki/vimwiki"
   }
 }
 
