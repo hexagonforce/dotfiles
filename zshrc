@@ -26,6 +26,7 @@ export PATH="$HOME/.gems/bin:$PATH"
 
 # Aliases
 alias rg=ranger
+alias mydotfiles="cd $HOME/projects/dotfiles"
 
 ### ZSH HOME
 export ZSH=$HOME/.zsh
