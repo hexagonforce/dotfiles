@@ -6,7 +6,7 @@ config.bind('H', 'tab-prev')
 config.bind('L', 'tab-next')
 config.bind(';v', 'hint links spawn mpv "{hint-url}"')
 config.bind(';g', 'hint images download')
-config.set('hints.chars', 'arstdhneiovk')
+config.set('hints.chars', 'arstdhneiocm')
 
 config.set('downloads.location.prompt', False)
 tab_bg_color = '#6272A4'

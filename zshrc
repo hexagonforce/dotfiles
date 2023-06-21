@@ -17,6 +17,8 @@ if [ -d "/var/lib/flatpak/exports/bin" ] ; then
     PATH="/var/lib/flatpak/exports/bin:$PATH"
 fi
 
+PATH="$HOME/projects/linux-scripts:$PATH"
+
 export PATH
 export EDITOR=/usr/bin/nvim
 export VISUAL=/usr/bin/nvim
@@ -27,6 +29,9 @@ export PATH="$HOME/.gems/bin:$PATH"
 # Aliases
 alias rg=ranger
 alias mydotfiles="cd $HOME/projects/dotfiles"
+alias when="calcurse -Q"
+alias open_in_nomacs="flatpak run org.nomacs.ImageLounge . > /dev/null 2> /dev/null"
+alias newsol="cp $NEW_SOL"
 
 ### ZSH HOME
 export ZSH=$HOME/.zsh
@@ -53,3 +58,10 @@ SPACESHIP_USER_SHOW=always
 SPACESHIP_PROMPT_ADD_NEWLINE=false
 SPACESHIP_CHAR_SYMBOL="❯"
 SPACESHIP_CHAR_SUFFIX=" "
+
+# Final configurations
+SAVEHIST=500
+HISTFILE=~/.zsh_history
+bindkey -v
+fastfetch
+
