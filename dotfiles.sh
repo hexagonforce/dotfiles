@@ -1,7 +1,7 @@
 #! /usr/bin/zsh
 
 # Files inside the normal xdg .config directory
-xdg_dotfiles=("mpv" "ranger" "sway" "wofi" "zathura" "waybar" "foot" "mpd" "nvim" "qutebrowser" "hypr" "kitty" "newsboat")
+xdg_dotfiles=("mpv" "ranger" "sway" "waybar" "wofi" "zathura" "foot" "mpd" "nvim" "qutebrowser" "kitty" "newsboat")
 
 CONFIG_HOME=$HOME/.config
 for folder ($xdg_dotfiles){
@@ -11,7 +11,6 @@ for folder ($xdg_dotfiles){
     ln -s "$PWD/$folder" "$CONFIG_HOME/"
 }
 
-ln -s "$PWD/Vieb/viebrc" "$CONFIG_HOME/Vieb/viebrc"
 
 # Individual configuration files
 
