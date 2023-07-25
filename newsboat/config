@@ -1,1 +1,1 @@
-browser "firefox %u"
+browser "org.mozilla.firefox %u"

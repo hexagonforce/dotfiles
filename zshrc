@@ -23,14 +23,16 @@ export PATH
 export EDITOR=/usr/bin/nvim
 export VISUAL=/usr/bin/nvim
 export NEW_SOL="$HOME/Templates/template.cpp"
+export GOPATH="$HOME/.go"
 export GEM_HOME="$HOME/.gems/"
 export PATH="$HOME/.gems/bin:$PATH"
 
 # Aliases
 alias rg=ranger
+alias ll="exa -alh"
+alias ls="exa"
 alias mydotfiles="cd $HOME/projects/dotfiles"
 alias when="calcurse -Q"
-alias open_in_nomacs="flatpak run org.nomacs.ImageLounge . > /dev/null 2> /dev/null"
 alias newsol="cp $NEW_SOL"
 
 ### ZSH HOME

@@ -76,47 +76,47 @@ time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
   ["dracula.nvim"] = {
     loaded = true,
-    path = "/home/syoo/.local/share/nvim/site/pack/packer/start/dracula.nvim",
+    path = "/home/syoo/:/var/lib/flatpak/exports/:/var/lib/flatpak/exports/share:/var/lib/flatpak/exports/share/nvim/site/pack/packer/start/dracula.nvim",
     url = "https://github.com/Mofiqul/dracula.nvim"
   },
   ["lualine.nvim"] = {
     loaded = true,
-    path = "/home/syoo/.local/share/nvim/site/pack/packer/start/lualine.nvim",
+    path = "/home/syoo/:/var/lib/flatpak/exports/:/var/lib/flatpak/exports/share:/var/lib/flatpak/exports/share/nvim/site/pack/packer/start/lualine.nvim",
     url = "https://github.com/nvim-lualine/lualine.nvim"
   },
   ["nvim-tree.lua"] = {
     loaded = true,
-    path = "/home/syoo/.local/share/nvim/site/pack/packer/start/nvim-tree.lua",
+    path = "/home/syoo/:/var/lib/flatpak/exports/:/var/lib/flatpak/exports/share:/var/lib/flatpak/exports/share/nvim/site/pack/packer/start/nvim-tree.lua",
     url = "https://github.com/nvim-tree/nvim-tree.lua"
   },
   ["nvim-treesitter"] = {
     loaded = true,
-    path = "/home/syoo/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
+    path = "/home/syoo/:/var/lib/flatpak/exports/:/var/lib/flatpak/exports/share:/var/lib/flatpak/exports/share/nvim/site/pack/packer/start/nvim-treesitter",
     url = "https://github.com/nvim-treesitter/nvim-treesitter"
   },
   ["nvim-web-devicons"] = {
     loaded = true,
-    path = "/home/syoo/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
+    path = "/home/syoo/:/var/lib/flatpak/exports/:/var/lib/flatpak/exports/share:/var/lib/flatpak/exports/share/nvim/site/pack/packer/start/nvim-web-devicons",
     url = "https://github.com/nvim-tree/nvim-web-devicons"
   },
   ["packer.nvim"] = {
     loaded = true,
-    path = "/home/syoo/.local/share/nvim/site/pack/packer/start/packer.nvim",
+    path = "/home/syoo/:/var/lib/flatpak/exports/:/var/lib/flatpak/exports/share:/var/lib/flatpak/exports/share/nvim/site/pack/packer/start/packer.nvim",
     url = "https://github.com/wbthomason/packer.nvim"
   },
   ["plenary.nvim"] = {
     loaded = true,
-    path = "/home/syoo/.local/share/nvim/site/pack/packer/start/plenary.nvim",
+    path = "/home/syoo/:/var/lib/flatpak/exports/:/var/lib/flatpak/exports/share:/var/lib/flatpak/exports/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
   },
   ["telescope.nvim"] = {
     loaded = true,
-    path = "/home/syoo/.local/share/nvim/site/pack/packer/start/telescope.nvim",
+    path = "/home/syoo/:/var/lib/flatpak/exports/:/var/lib/flatpak/exports/share:/var/lib/flatpak/exports/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
   },
   vimwiki = {
     loaded = true,
-    path = "/home/syoo/.local/share/nvim/site/pack/packer/start/vimwiki",
+    path = "/home/syoo/:/var/lib/flatpak/exports/:/var/lib/flatpak/exports/share:/var/lib/flatpak/exports/share/nvim/site/pack/packer/start/vimwiki",
     url = "https://github.com/vimwiki/vimwiki"
   }
 }
