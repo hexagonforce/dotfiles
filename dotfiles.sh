@@ -1,7 +1,7 @@
 #! /usr/bin/zsh
 
 # Files inside the normal xdg .config directory
-xdg_dotfiles=("mpv" "ranger" "sway" "waybar" "wofi" "zathura" "foot" "mpd" "nvim" "qutebrowser" "kitty" "newsboat")
+xdg_dotfiles=("mpv" "ranger" "sway" "waybar" "wofi" "alacritty" "zathura" "mpd" "nvim" "qutebrowser" "newsboat" "nomacs")
 
 CONFIG_HOME=$HOME/.config
 for folder ($xdg_dotfiles){

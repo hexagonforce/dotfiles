@@ -18,3 +18,5 @@ vim.opt.expandtab = true
 vim.opt.filetype = "on"
 
 vim.keymap.set('n', '<leader>h', ':nohlsearch<CR>')
+
+vim.keymap.set('n', '<leader>f', ':NvimTreeToggle<CR>')
