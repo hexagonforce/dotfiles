@@ -14,11 +14,13 @@ set $down j
 set $up k
 set $right l
 # Your preferred terminal emulator
-set $term foot 
+set $term alacritty 
 # Your preferred application launcher
 # Note: pass the final command to swaymsg so that the resulting window can be opened
 # on the original workspace that the command was run on.
 set $menu wofi --allow-images --term=$term --insensitive --matching=fuzzy --show drun | xargs swaymsg exec --
+# Font
+font pango:SourceCodePro Medium 11
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
@@ -64,9 +66,9 @@ input type:touchpad {
 }
 
 input * {
-    xkb_layout "kr,us"
-    xkb_variant "kr104,colemak"
-    xkb_options "grp:win_space_toggle"
+    xkb_layout "us"
+    xkb_variant "colemak"
+    xkb_options "korean:ralt_hangul,korean:rctrl_hanja"
 }
 
 input 1132:49298:Logitech_G102_LIGHTSYNC_Gaming_Mouse_Keyboard {
@@ -85,7 +87,7 @@ input 1132:49298:Logitech_G102_LIGHTSYNC_Gaming_Mouse_Keyboard {
     bindsym $mod+Shift+q kill
 
     # Start your launcher
-    bindsym $mod+d exec --no-startup-id $menu
+    bindsym $mod+Shift+i exec --no-startup-id $menu
 
     # Drag floating windows by holding down $mod and left mouse button.
     # Resize them with right mouse button + $mod.
@@ -180,8 +182,8 @@ input 1132:49298:Logitech_G102_LIGHTSYNC_Gaming_Mouse_Keyboard {
 # i3-gaps
 #
 # for_window [class"^.*"] border pixel 0
-gaps inner 4
-gaps outer 4
+gaps inner 5
+gaps outer 5
 smart_gaps on
 smart_borders on
 
@@ -259,7 +261,6 @@ bar {
     swaybar_command waybar
 }
 
-
 #
 # Floating window by default
 #
@@ -274,11 +275,11 @@ set $gnome-schema org.gnome.desktop.interface
 exec_always {
     gsettings set $gnome-schema gtk-theme 'Dracula'
 }
+exec /usr/bin/kime
 exec wl-paste -t text --watch clipman store --no-persist
-exec gammastep -l 15:120
+exec gammastep -l 37.5:127
 exec --no-startup-id /usr/libexec/polkit-gnome-authentication-agent-1
 exec blueman-applet
-exec fcitx5
 exec dbus-update-activation-environment DISPLAY XAUTHORITY WAYLAND_DISPLAY
 exec gnome-keyring-daemon --start --components=secrets
 exec pcloud

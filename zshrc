@@ -28,12 +28,13 @@ export GEM_HOME="$HOME/.gems/"
 export PATH="$HOME/.gems/bin:$PATH"
 
 # Aliases
-alias rg=ranger
 alias ll="exa -alh"
 alias ls="exa"
 alias mydotfiles="cd $HOME/projects/dotfiles"
 alias when="calcurse -Q"
 alias newsol="cp $NEW_SOL"
+alias vim=nvim
+alias vimwiki="nvim -c VimwikiIndex"
 
 ### ZSH HOME
 export ZSH=$HOME/.zsh
@@ -63,7 +64,7 @@ SPACESHIP_CHAR_SUFFIX=" "
 
 # Final configurations
 SAVEHIST=500
-HISTFILE=~/.zsh_history
+HISTFILE=~/.zsh/history
 bindkey -v
 fastfetch
 
