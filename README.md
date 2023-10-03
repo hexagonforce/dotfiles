@@ -1,18 +1,18 @@
 # dotfiles for any fedora hexagon-device
 
 ## Requirements
-zsh
-sway
-ranger
-foot
-fcitx5
-fcitx5-hangul
-mpv
-mpd
-wofi
-zathura
-nvim
-git
+- zsh
+- sway
+- lf
+- alacritty
+- kime
+- mpv
+- mpd
+- wofi
+- zathura
+- nvim
+- newsboat
+- git
 
 
 
