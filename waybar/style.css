@@ -1,13 +1,13 @@
 * {
     border: none;
-    border-radius: 2px;
-    font-family: Source Code Pro, monospace;
+    border-radius: 0px;
+    font-family: "FiraMono Nerd Font", "Fira Mono", monospace;
     font-size: 14px;
 }
 
 window#waybar {
-    background-color: #262626;
-    color: #ffffff;
+    background-color: #282c34;
+    color: #abb2bf;
     transition-property: background-color;
     transition-duration: .5s;
     border-radius: 0;
@@ -27,7 +27,7 @@ window#waybar.solo {
 */
 
 window#waybar.termite {
-    background-color: #3F3F3F;
+    background-color: #abb2bf;
 }
 
 window#waybar.chromium {
@@ -90,10 +90,10 @@ button:hover {
 #scratchpad,
 #mpd,
 #language {
-    padding: 0 10px;
-    margin: 6px 3px;
-    color: #333333;
-    background-color: #9580ff;
+    padding: 5px 10px;
+    margin: 6px 1px;
+    color: #282c34;
+    background-color: #98c379;
 }
 
 #window,
@@ -120,7 +120,7 @@ button:hover {
 }
 
 #battery.charging, #battery.plugged {
-    background-color: #9580ff;
+    background-color: #98c379;
 }
 
 @keyframes blink {
@@ -131,7 +131,7 @@ button:hover {
 }
 
 #battery.critical:not(.charging) {
-    background-color: #f53c3c;
+    background-color: #be5046;
     color: #ffffff;
     animation-name: blink;
     animation-duration: 0.5s;
@@ -166,7 +166,7 @@ label:focus {
 }
 
 #network.disconnected {
-    background-color: #f53c3c;
+    background-color: #e06c75;
 }
 
 #pulseaudio {
@@ -175,7 +175,7 @@ label:focus {
 }
 
 #pulseaudio.muted {
-    background-color: #90b1b1;
+    background-color: #e06c75;
     color: #2a5c45;
 }
 
@@ -202,9 +202,9 @@ label:focus {
     background-color: #ffa000;
 } */
 
-#temperature {
+/*#temperature {
     background-color: #9580ff;
-}
+}*/
 
 #temperature.critical {
     background-color: #eb4d4b;
@@ -220,7 +220,7 @@ label:focus {
 
 #tray > .needs-attention {
     -gtk-icon-effect: highlight;
-    background-color: #eb4d4b;
+    background-color: #e06c75;
 }
 
 #idle_inhibitor {
@@ -228,7 +228,7 @@ label:focus {
 }
 
 #idle_inhibitor.activated {
-    background-color: #ff80bf;
+    background-color: #61afef;
 }
 
 #mpd {
@@ -237,16 +237,16 @@ label:focus {
 }
 
 #mpd.disconnected {
-    background-color: #ff9580;
+    background-color: #e06c75;
     color: #ffffff;
 }
 
 #mpd.stopped {
-    background-color: #ff80bf;
+    background-color: #d19a66;
 }
 
 #mpd.paused {
-    background-color: #ff80bf;
+    background-color: #e5c07b;
 }
 
 #language {

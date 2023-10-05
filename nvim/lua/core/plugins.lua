@@ -17,7 +17,7 @@ return require('packer').startup(function(use)
   -- My plugins here
   -- use 'foo1/bar1.nvim'
   -- use 'foo2/bar2.nvim'
-  use 'Mofiqul/dracula.nvim' 
+  use 'navarasu/onedark.nvim'
   use {
     'nvim-tree/nvim-tree.lua',
     requires = {

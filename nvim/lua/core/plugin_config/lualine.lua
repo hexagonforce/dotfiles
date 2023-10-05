@@ -1,7 +1,10 @@
 require('lualine').setup {
     options = {
         icons_enabled = true,
-        theme = 'dracula',
+        theme = 'onedark',
+        disabled_filetypes = {
+            'NvimTree',
+        },
     },
     sections = {
         lualine_a = {

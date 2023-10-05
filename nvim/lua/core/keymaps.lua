@@ -26,6 +26,7 @@ vim.keymap.set('n', '<leader>n', ':nohlsearch<CR>')
 vim.keymap.set('n', '<leader>k', ':bn<CR>')
 vim.keymap.set('n', '<leader>j', ':bp<CR>')
 vim.keymap.set('n', '<leader>d', ':bd<CR>')
+vim.keymap.set('n', '<leader>c', ':let @/=""<CR>')
 
 vim.keymap.set('n', '<leader>src', ':source ~/.config/nvim/init.lua<CR>')
 vim.keymap.set('n', '<leader>vi', ':e ~/.config/nvim<CR>')

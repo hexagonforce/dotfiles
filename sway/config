@@ -14,13 +14,13 @@ set $down j
 set $up k
 set $right l
 # Your preferred terminal emulator
-set $term alacritty 
+set $term kitty
 # Your preferred application launcher
 # Note: pass the final command to swaymsg so that the resulting window can be opened
 # on the original workspace that the command was run on.
 set $menu wofi --allow-images --term=$term --insensitive --matching=fuzzy --show drun | xargs swaymsg exec --
 # Font
-font pango:SourceCodePro Medium 11
+font pango:Fira Mono 11
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
@@ -284,27 +284,28 @@ exec dbus-update-activation-environment DISPLAY XAUTHORITY WAYLAND_DISPLAY
 exec gnome-keyring-daemon --start --components=secrets
 exec pcloud
 
-# class                 border  bground text    indicator child_border
-client.focused          #6272A4 #6272A4 #F8F8F2 #6272A4   #6272A4
-client.focused_inactive #44475A #44475A #F8F8F2 #44475A   #44475A
-client.unfocused        #282A36 #282A36 #BFBFBF #282A36   #282A36
-client.urgent           #44475A #FF5555 #F8F8F2 #FF5555   #FF5555
-client.placeholder      #282A36 #282A36 #F8F8F2 #282A36   #282A36
+set {
+    $black      #282c34
+	$white		#abb2bf
+    $lightred   #e06c75
+	$darkred    #be5046
+	$green		#98c379
+	$yellow		#e5c07b
+	$darkyellow #d19a66
+	$blue       #61afef
+	$magenta	#c678dd
+	$cyan       #56b6c2
+    $grey       #4b5263
+    $lightgrey  #5c6370
+	$transparent	#FF000000
+	#$transparent	#0000007f
+}
 
-client.background       #F8F8F2
-
-#bar {
-#  colors {
-#    background #282A36
-#    statusline #F8F8F2
-#    separator  #44475A
-#
-#    focused_workspace  #44475A #44475A #F8F8F2
-#    active_workspace   #282A36 #44475A #F8F8F2
-#    inactive_workspace #282A36 #282A36 #BFBFBF
-#    urgent_workspace   #FF5555 #FF5555 #F8F8F2
-#    binding_mode       #FF5555 #FF5555 #F8F8F2
-#  }
-#}
+# Set some nice colors		border	        background      text        indicator   child_border
+client.focused        	 	$blue           $blue           $black      $yellow     $blue
+client.unfocused        	$grey           $grey           $white	    $yellow     $grey
+client.focused_inactive 	$grey           $grey           $white      $yellow     $grey
+client.urgent	          	$lightred       $lightred       $black	    $yellow     $lightred
+client.placeholder	        $grey           $grey           $grey       $grey       $grey
 
 include /etc/sway/config.d/*
