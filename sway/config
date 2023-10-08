@@ -15,12 +15,13 @@ set $up k
 set $right l
 # Your preferred terminal emulator
 set $term kitty
+set $browser qutebrowser
 # Your preferred application launcher
 # Note: pass the final command to swaymsg so that the resulting window can be opened
 # on the original workspace that the command was run on.
 set $menu wofi --allow-images --term=$term --insensitive --matching=fuzzy --show drun | xargs swaymsg exec --
 # Font
-font pango:Fira Mono 11
+font pango:FiraCode Nerd Font 10
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
@@ -82,7 +83,7 @@ input 1132:49298:Logitech_G102_LIGHTSYNC_Gaming_Mouse_Keyboard {
 #
     # Start a terminal
     bindsym $mod+Return exec $term
-
+    bindsym $mod+n exec $browser
     # Kill focused window
     bindsym $mod+Shift+q kill
 
