@@ -273,9 +273,9 @@ for_window [app_id="zoom"] floating enable
 # Executions
 #
 set $gnome-schema org.gnome.desktop.interface
-exec_always {
-    gsettings set $gnome-schema gtk-theme 'Dracula'
-}
+# exec_always {
+#     gsettings set $gnome-schema gtk-theme 'Dracula'
+# }
 exec /usr/bin/kime
 exec wl-paste -t text --watch clipman store --no-persist
 exec gammastep -l 37.5:127
