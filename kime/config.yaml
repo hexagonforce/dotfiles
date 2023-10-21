@@ -80,7 +80,7 @@ engine:
   - 15.0
   latin:
     layout: Colemak 
-    preferred_direct: true
+    preferred_direct: true 
   hangul:
     layout: dubeolsik
     word_commit: false

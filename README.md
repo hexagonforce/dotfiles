@@ -1,19 +1,22 @@
 # dotfiles for any fedora hexagon-device
 
 ## Requirements
-- zsh
-- sway
-- lf
-- alacritty
+
+- conky
+- git
 - kime
-- mpv
+- kitty
+- lf
 - mpd
+- mpv
+- newsboat
+- nvim
+- qutebrowser
+- sway
+- waybar
 - wofi
 - zathura
-- nvim
-- newsboat
-- git
-
+- zsh
 
 
 ## Usage

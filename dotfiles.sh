@@ -1,7 +1,7 @@
 #! /usr/bin/zsh
 
 # Files inside the normal xdg .config directory
-xdg_dotfiles=("mpv" "lf" "sway" "waybar" "wofi" "kitty" "zathura" "mpd" "nvim" "qutebrowser" "newsboat" "nomacs" "kime")
+xdg_dotfiles=("conky" "kime" "kitty" "lf" "mpd" "mpv" "newsboat" "nomacs" "nvim" "qutebrowser" "sway" "waybar" "wofi" "zathura")
 
 CONFIG_HOME=$HOME/.config
 for folder ($xdg_dotfiles){
@@ -14,7 +14,7 @@ for folder ($xdg_dotfiles){
 
 # Individual configuration files
 
-dotfiles=("zshrc" "zshenv" "gitconfig")
+dotfiles=("gitconfig" "zshrc" "zshenv")
 for file ($dotfiles){
     if [[ -f "$HOME/.$file" ]]; then
         rm "$HOME/.$file"
