@@ -1,5 +1,5 @@
 # interpreter for shell commands
-set shell sh
+set shell zsh
 
 # set '-eu' options for shell commands
 # These options are used to have safer shell commands. Option '-e' is used to
@@ -34,11 +34,7 @@ map ` !true
 map x $$f
 map X !$f
 
-# dedicated keys for file opener actions
-map r &mimeopen $f
-map R $mimeopen --ask $f
-
-map a rename
+map r rename
 
 map on :set sortby natural; set info
 map os :set sortby size; set info size
@@ -59,6 +55,7 @@ cmd open &{{
 }}
 
 # mkdir command. See wiki if you want it to select created dir
+map a :push %touch<space>
 map A :push %mkdir<space>
 
 # define a custom 'rename' command without prompt for overwrite
@@ -121,3 +118,8 @@ map . set hidden!
 
 set previewer ~/.config/lf/lf_kitty_preview
 set cleaner ~/.config/lf/lf_kitty_clean
+
+set sortby time
+set info time
+set reverse!
+set dircounts true

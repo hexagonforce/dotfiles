@@ -1,4 +1,10 @@
 # Variables
+export EDITOR=/usr/bin/nvim
+export VISUAL=/usr/bin/nvim
+export NEW_SOL="$HOME/Templates/template.cpp"
+export GOPATH="$HOME/.go"
+export GEM_HOME="$HOME/.gems/"
+
 PATH=$HOME/.local/texlive/2023/bin/x86_64-linux:$HOME/bin:/usr/local/bin:$PATH
 
 # The next line updates PATH for the Google Cloud SDK.
@@ -17,15 +23,13 @@ if [ -d "/var/lib/flatpak/exports/bin" ] ; then
     PATH="/var/lib/flatpak/exports/bin:$PATH"
 fi
 
-PATH="$HOME/projects/linux-scripts:$PATH"
+# Paths for language-specific package management
+PATH="$GEM_HOME/bin:$PATH"
+PATH="/usr/bin/vendor_perl:$PATH"
+PATH="$PATH:$GOPATH/bin"
 
+# Make all changes to path before this line
 export PATH
-export EDITOR=/usr/bin/nvim
-export VISUAL=/usr/bin/nvim
-export NEW_SOL="$HOME/Templates/template.cpp"
-export GOPATH="$HOME/.go"
-export GEM_HOME="$HOME/.gems/"
-export PATH="$HOME/.gems/bin:$PATH"
 
 # Aliases
 alias ll="exa -alh"
@@ -35,6 +39,10 @@ alias when="calcurse -Q"
 alias newsol="cp $NEW_SOL"
 alias vim=nvim
 alias vimwiki="nvim -c VimwikiIndex"
+
+# Language
+export LANG=ko_KR.UTF-8
+export LC_COLLATE=C.UTF-8
 
 ### ZSH HOME
 export ZSH=$HOME/.zsh
