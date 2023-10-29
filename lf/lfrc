@@ -116,8 +116,9 @@ cmd zip ${{
 
 map . set hidden!
 
-set previewer ~/.config/lf/lf_kitty_preview
-set cleaner ~/.config/lf/lf_kitty_clean
+set sixel true
+set previewer ~/.config/lf/previewer.sh
+# set cleaner ~/.config/lf/lf_kitty_clean
 
 set sortby time
 set info time
