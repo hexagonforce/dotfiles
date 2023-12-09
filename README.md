@@ -5,14 +5,12 @@
 - conky
 - git
 - kime
-- kitty
 - lf
 - mpd
 - mpv
 - sway
 - waybar
 - wofi
-- zathura
 - zsh
 
 ## Usage
