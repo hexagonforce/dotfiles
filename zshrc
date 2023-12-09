@@ -1,9 +1,13 @@
 # Variables
+source ~/.zshrc.private
+
 export EDITOR=/usr/bin/nvim
 export VISUAL=/usr/bin/nvim
 export NEW_SOL="$HOME/Templates/template.cpp"
 export GOPATH="$HOME/.go"
 export GEM_HOME="$HOME/.gems/"
+export LYNX_CFG="$HOME/.config/lynx/lynx.cfg"
+export OPENER=xdg-open
 
 PATH=$HOME/.local/texlive/2023/bin/x86_64-linux:$HOME/bin:/usr/local/bin:$PATH
 
