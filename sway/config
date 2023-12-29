@@ -275,6 +275,9 @@ bindsym $mod+Print exec grim -g "$(slurp)" "$HOME/Pictures/Screenshots/Screensho
 bindsym Print exec grim -t png "$HOME/Pictures/Screenshots/Screenshot_$(date +%Y-%m-%dT%H:%M:%S).png"
 bindsym $mod+y exec mpv "$(wl-paste)"
 
+bindsym $mod+bracketleft exec swaymsg -- output - transform 90 clockwise 
+bindsym $mod+bracketright exec swaymsg -- output - transform 90 anticlockwise
+
 #
 # Status Bar:
 #
