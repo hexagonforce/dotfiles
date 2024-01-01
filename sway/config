@@ -102,6 +102,7 @@ input 1132:49298:Logitech_G102_LIGHTSYNC_Gaming_Mouse_Keyboard {
     # Commonly used programs
     bindsym $mod+Return exec $term
     bindsym $mod+n exec $browser
+    bindsym $mod+Shift+n exec $browser --incognito
     bindsym $mod+d exec $filemanager
     bindsym $mod+F1 exec qimgv
 
