@@ -210,7 +210,7 @@ gaps outer 5
 smart_gaps on
 smart_borders on
 
-# set $borderwitdh 1
+# set $borderwidth 1
 # hide_edge_borders both
 
 #
@@ -272,12 +272,12 @@ bindsym $mod+comma exec "mpc prev"
 #
 # Custom keyboard bindings
 #
-bindsym $mod+Print exec grim -g "$(slurp)" "$HOME/Pictures/Screenshots/Screenshot_$(date +%Y-%m-%dT%H:%M:%S).png"
+bindsym $mod+Shift+s exec grim -g "$(slurp)" "$HOME/Pictures/Screenshots/Screenshot_$(date +%Y-%m-%dT%H:%M:%S).png"
 bindsym Print exec grim -t png "$HOME/Pictures/Screenshots/Screenshot_$(date +%Y-%m-%dT%H:%M:%S).png"
 bindsym $mod+y exec mpv "$(wl-paste)"
 
-bindsym $mod+bracketleft exec swaymsg -- output - transform 90 clockwise 
-bindsym $mod+bracketright exec swaymsg -- output - transform 90 anticlockwise
+bindsym $mod+bracketleft exec swaymsg -- output - transform 90 anticlockwise 
+bindsym $mod+bracketright exec swaymsg -- output - transform 90 clockwise
 
 #
 # Status Bar:
@@ -294,6 +294,23 @@ bar {
 for_window [app_id="blueman-manager"] floating enable, resize set 500 500
 for_window [app_id="pavucontrol"] floating enable, resize set 600 400
 for_window [app_id="zoom"] floating enable
+
+set $ddterm-id dropdown-terminal
+set $ddterm $term --app-id=$ddterm-id
+set $ddterm-resize resize set 100ppt 40ppt, move position 0 0
+
+for_window [app_id="$ddterm-id"] {
+    floating enable
+    $ddterm-resize
+    move to scratchpad
+    scratchpad show
+}
+
+bindsym $mod+m exec swaymsg '[app_id=$ddterm-id] scratchpad show' \
+  || $ddterm \
+  && sleep .1 && swaymsg '[app_id="$ddterm-id"] $ddterm-resize'
+# ^-- resize again, case moving to different output
+
 #
 # Executions
 #
@@ -309,29 +326,34 @@ exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 exec dbus-update-activation-environment DISPLAY XAUTHORITY WAYLAND_DISPLAY
 exec gnome-keyring-daemon --start --components=secrets
 exec conky
+exec conky -c ~/.config/conky/conky2.conf
 
 set {
-    $black      #282c34
-	$white		#abb2bf
-    $lightred   #e06c75
-	$darkred    #be5046
-	$green		#98c379
-	$yellow		#e5c07b
-	$darkyellow #d19a66
-	$blue       #61afef
-	$magenta	#c678dd
-	$cyan       #56b6c2
-    $grey       #4b5263
-    $lightgrey  #5c6370
+    $black      #282828
+    $grey       #928374
+	$darkred    #cc241d
+    $lightred   #fb4934
+    $darkgreen  #98971a
+	$green		#b8bb26
+	$darkyellow #d79921
+	$yellow		#fabd2f
+    $darkblue   #458588
+	$blue       #83a598
+	$darkpurple #b16286
+	$purple     #d3869b
+	$darkaqua   #689d6a
+    $aqua       #8ec07c
+    $lightgrey  #a89984
+	$white		#ebdbb2
 	$transparent	#FF000000
 	#$transparent	#0000007f
 }
 
 # Set some nice colors		border	        background      text        indicator   child_border
-client.focused        	 	$blue           $blue           $black      $yellow     $blue
-client.unfocused        	$grey           $grey           $white	    $yellow     $grey
-client.focused_inactive 	$grey           $grey           $white      $yellow     $grey
-client.urgent	          	$lightred       $lightred       $black	    $yellow     $lightred
+client.focused        	 	$blue           $blue           $black      $darkpurple     $blue
+client.unfocused        	$grey           $grey           $white	    $darkpurple     $grey
+client.focused_inactive 	$grey           $grey           $white      $darkpurple     $grey
+client.urgent	          	$lightred       $lightred       $black	    $darkpurple     $lightred
 client.placeholder	        $grey           $grey           $grey       $grey       $grey
 
 include /etc/sway/config.d/*
