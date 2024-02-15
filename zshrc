@@ -43,6 +43,12 @@ alias when="calcurse -Q"
 alias newsol="cp $NEW_SOL"
 alias vim=nvim
 alias vimwiki="nvim -c VimwikiIndex"
+reboot_to_windows ()
+{
+    windows_title=$(grep -i windows /boot/grub/grub.cfg | cut -d "'" -f 2)
+    sudo grub-reboot "$windows_title" && sudo reboot
+}
+alias reboot-to-windows='reboot_to_windows'
 
 # Language
 export LANG=ko_KR.UTF-8

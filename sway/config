@@ -22,7 +22,7 @@ set $filemanager dolphin
 # on the original workspace that the command was run on.
 set $menu wofi --allow-images --term=$term --insensitive --matching=fuzzy --show drun | xargs swaymsg exec --
 # Font
-font pango:FiraCode Nerd Font 10
+font pango:Noto Sans CJK KR 10
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
@@ -327,6 +327,8 @@ exec dbus-update-activation-environment DISPLAY XAUTHORITY WAYLAND_DISPLAY
 exec gnome-keyring-daemon --start --components=secrets
 exec conky
 exec conky -c ~/.config/conky/conky2.conf
+exec /usr/share/kdeconnect
+exec_always nwg-dock -d
 
 set {
     $black      #282828
