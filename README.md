@@ -9,6 +9,7 @@
 - lf (chafa, sixel)
 - mpd
 - mpv
+- nsxiv
 - sway
 - waybar
 - wofi
