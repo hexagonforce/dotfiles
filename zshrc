@@ -1,5 +1,4 @@
 # Variables
-source ~/.zshrc.private
 
 export EDITOR=/usr/bin/nvim
 export VISUAL=/usr/bin/nvim
@@ -51,7 +50,7 @@ reboot_to_windows ()
 alias reboot-to-windows='reboot_to_windows'
 
 # Language
-export LANG=ko_KR.UTF-8
+export LANG=en_US.UTF-8
 export LC_COLLATE=C.UTF-8
 
 ### ZSH HOME
