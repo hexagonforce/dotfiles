@@ -2,7 +2,6 @@
 
 export EDITOR=/usr/bin/nvim
 export VISUAL=/usr/bin/nvim
-export NEW_SOL="$HOME/Templates/template.cpp"
 export GOPATH="$HOME/.go"
 export GEM_HOME="$HOME/.gems/"
 export LYNX_CFG="$HOME/.config/lynx/lynx.cfg"
@@ -39,9 +38,10 @@ alias ll="exa -alh"
 alias ls="exa"
 alias mydotfiles="cd $HOME/projects/dotfiles"
 alias when="calcurse -Q"
-alias newsol="cp $NEW_SOL"
+alias newsol="cp $HOME/Templates/template.cpp"
 alias vim=nvim
 alias vimwiki="nvim -c VimwikiIndex"
+
 reboot_to_windows ()
 {
     windows_title=$(grep -i windows /boot/grub/grub.cfg | cut -d "'" -f 2)

@@ -1,3 +1,2 @@
 load_thumbnail_viewer sixel
 show_thumbnails=1
-search_again=1
