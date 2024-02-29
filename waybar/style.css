@@ -95,8 +95,7 @@ button:hover {
 #idle_inhibitor,
 #mpd,
 #language {
-    padding: 5px 10px;
-    margin: 6px 1px;
+    padding: 10px 10px;
     color: #ebdbb2;
 }
 

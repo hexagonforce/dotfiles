@@ -18,7 +18,7 @@ set $term foot
 set $browser firefox 
 set $filemanager dolphin
 
-default_border pixel 3
+default_border pixel 4
 default_floating_border none
 
 # Your preferred application launcher
@@ -353,10 +353,10 @@ set {
 }
 
 # Set some nice colors		border	        background      text        indicator   child_border
-client.focused        	 	$darkgreen      $blue           $black      $darkpurple     $blue
+client.focused        	 	$green          $blue           $black      $darkpurple     $aqua
 client.unfocused        	$grey           $grey           $white	    $darkpurple     $grey
 client.focused_inactive 	$grey           $grey           $white      $darkpurple     $grey
 client.urgent	          	$lightred       $lightred       $black	    $darkpurple     $lightred
-client.placeholder	        $grey           $grey           $grey       $grey       $grey
+client.placeholder	        $grey           $grey           $grey       $grey           $grey
 
 include /etc/sway/config.d/*
