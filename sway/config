@@ -329,7 +329,6 @@ exec gnome-keyring-daemon --start --components=secrets
 exec conky
 exec conky -c ~/.config/conky/conky2.conf
 exec /usr/share/kdeconnect
-exec_always nwg-dock -d
 
 set {
     $black      #282828
@@ -352,8 +351,8 @@ set {
 	#$transparent	#0000007f
 }
 
-# Set some nice colors		border	        background      text        indicator   child_border
-client.focused        	 	$green          $blue           $black      $darkpurple     $aqua
+# Set some nice colors		border	        background      text        indicator       child_border
+client.focused        	 	$blue           $blue           $black      $darkpurple     $aqua
 client.unfocused        	$grey           $grey           $white	    $darkpurple     $grey
 client.focused_inactive 	$grey           $grey           $white      $darkpurple     $grey
 client.urgent	          	$lightred       $lightred       $black	    $darkpurple     $lightred
