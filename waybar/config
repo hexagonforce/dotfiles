@@ -5,25 +5,24 @@
     // "width": 1280, // Waybar width
     "spacing": 4, // Gaps between modules (4px)
     // Choose the order of the modules
-    "modules-center": ["sway/window"],
-    "modules-left": ["sway/workspaces", "sway/submap", "sway/scratchpad"],
-    "modules-center": ["sway/window"],
-    "modules-right": ["mpd", "idle_inhibitor", "pulseaudio", "network",  "memory", "temperature", "backlight", "sway/language", "battery", "battery#bat2", "clock", "tray"],
+    "modules-left": ["sway/window"],
+    "modules-center": ["sway/workspaces", "sway/submap", "sway/scratchpad"],
+    "modules-right": ["mpd", "idle_inhibitor", "pulseaudio", "network", "backlight", "battery", "battery#bat2", "clock", "tray"],
     // Modules configuration
     "sway/workspaces": {
         "on-click": "activate",
-        //"format": "{icon}",
-        //"format-icons": {
-        //    "1": "",
-        //    "2": "",
-        //    "3": "",
-        //    "4": "",
-        //    "5": "",
-        //    "urgent": "",
-        //    "focused": "",
-        //    "default": ""
-        //},
-        "sort-by-number": true
+        "all-outputs": false,
+        "sort-by-number": true,
+        "persistent-workspaces": {
+            "1": ["DP-1"],
+            "2": ["DP-1"],
+            "3": ["DP-1"],
+            "4": ["DP-1"],
+            "5": ["DP-1"],
+            "6": ["DP-1"],
+            "9": ["eDP-1"],
+            "10": ["eDP-1"]
+        }
     },
     "keyboard-state": {
         "numlock": true,
@@ -125,7 +124,7 @@
     },
     "network": {
         // "interface": "wlp2*", // (Optional) To force the use of this interface
-        "format-wifi": "{essid} ({signalStrength}%) ",
+        "format-wifi": "  {essid}",
         "format-ethernet": "{ipaddr}/{cidr} ",
         "tooltip-format": "{ifname} via {gwaddr} ",
         "format-linked": "{ifname} (No IP) ",

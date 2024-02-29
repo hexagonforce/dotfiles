@@ -1,4 +1,5 @@
 /*
+ * Colors:
  * bg: #282828
  * gray: #928374
  * dred: #cc241d
@@ -16,6 +17,7 @@
  * lgray: #a89984
  * fg: #ebdbb2
  */
+
 * {
     border: none;
     border-radius: 0px;
@@ -33,19 +35,6 @@ window#waybar {
 
 window#waybar.hidden {
     opacity: 0.2;
-}
-
-/*
-window#waybar.empty {
-    background-color: transparent;
-}
-window#waybar.solo {
-    background-color: #FFFFFF;
-}
-*/
-
-window#waybar.termite {
-    background-color: #a89984;
 }
 
 window#waybar.chromium {
@@ -102,15 +91,13 @@ button:hover {
 #pulseaudio,
 #wireplumber,
 #custom-media,
-#tray,
 #mode,
 #idle_inhibitor,
 #mpd,
 #language {
     padding: 5px 10px;
     margin: 6px 1px;
-    color: #282828;
-    background-color: #98971a;
+    color: #ebdbb2;
 }
 
 #window,
@@ -126,14 +113,6 @@ button:hover {
 /* If workspaces is the rightmost module, omit right margin */
 .modules-right > widget:last-child > #workspaces {
     margin-right: 0;
-}
-
-#clock {
-    /* background-color: #9580ff; */
-}
-
-#battery {
-    /* background-color: #9580ff; */
 }
 
 #battery.charging, #battery.plugged {
@@ -161,34 +140,8 @@ label:focus {
     background-color: #000000;
 }
 
-/* #cpu {
-    background-color: #2ecc71;
-    color: #000000;
-} */
-
-#memory {
-    /* background-color: #9580ff; */
-}
-
-/* #disk {
-    background-color: #964B00;
-} */
-
-#backlight {
-    /* background-color: #9580ff; */
-}
-
-#network {
-    /* background-color: #9580ff; */
-}
-
 #network.disconnected {
     background-color: #cc241d;
-}
-
-#pulseaudio {
-    /* background-color: #9580ff;
-    color: #333333; */
 }
 
 #pulseaudio.muted {
@@ -205,30 +158,13 @@ label:focus {
     background-color: #928374;
 }
 
-/* #custom-media {
-    background-color: #66cc99;
-    color: #2a5c45;
-    min-width: 100px;
-}
-
-#custom-media.custom-spotify {
-    background-color: #66cc99;
-}
-
-#custom-media.custom-vlc {
-    background-color: #ffa000;
-} */
-
-/*#temperature {
-    background-color: #9580ff;
-}*/
-
 #temperature.critical {
     background-color: #fb4934;
 }
 
 #tray {
-    background-color: #ffffff;
+    background-color: #ebdbb2;
+    padding: 5px 5px;
 }
 
 #tray > .passive {
@@ -240,51 +176,9 @@ label:focus {
     background-color: #cc241d;
 }
 
-#idle_inhibitor {
-    /* background-color: #9580ff; */
-}
-
 #idle_inhibitor.activated {
     background-color: #458588;
 }
-
-#mpd {
-    /* background-color: #9580ff; */
-    /* color: #2a5c45; */
-}
-
-#mpd.disconnected {
-    background-color: #cc241d;
-    color: #ffffff;
-}
-
-#mpd.stopped {
-    background-color: #a89984;
-}
-
-#mpd.paused {
-    background-color: #d79921;
-}
-
-#language {
-    min-width: 60px;
-}
-
-/* #keyboard-state {
-    background: #97e1ad;
-    color: #000000;
-    padding: 0 0px;
-    margin: 0 5px;
-    min-width: 16px;
-}
-
-#keyboard-state > label {
-    padding: 0 5px;
-}
-
-#keyboard-state > label.locked {
-    background: rgba(0, 0, 0, 0.2);
-} */
 
 #scratchpad {
     background: rgba(0, 0, 0, 0.2);
