@@ -27,7 +27,7 @@ default_floating_border none
 set $menu wofi --allow-images --term=$term --insensitive --matching=fuzzy --show drun | xargs swaymsg exec --
 
 # Font
-font pango:Hack 10
+font pango:Hack Nerd Font 10
 
 ### Output configuration
 #
