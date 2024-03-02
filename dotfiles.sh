@@ -3,9 +3,11 @@
 # Files inside the normal xdg .config directory
 xdg_dotfiles=("conky" "foot" "git" "kime" "lf" "mpd" "mpv" "ncmpcpp" "nsxiv" "nvim" "sway" "waybar" "wofi" "ytfzf")
 
+FIREFOX_DEFAULT_PROFILE_NAME=$(./find_default_firefox_profile.py)
 CONFIG_HOME=$HOME/.config
 
 stow zsh -t $HOME
+stow firefox -t "$HOME/.mozilla/firefox/$FIREFOX_DEFAULT_PROFILE_NAME"
 for folder in $xdg_dotfiles
 do
     mkdir -p $CONFIG_HOME/$folder
