@@ -52,6 +52,8 @@ workspace 4 output DP-1
 workspace 9 output eDP-1 
 workspace 10 output eDP-1
 
+bindsym $mod+g output "eDP-1" toggle
+
 ### Idle configuration
 #
 # Example configuration:
@@ -102,10 +104,9 @@ input 1132:49298:Logitech_G102_LIGHTSYNC_Gaming_Mouse_Keyboard {
 #
     # Commonly used programs
     bindsym $mod+Return exec $term
-    bindsym $mod+n exec $browser
-    bindsym $mod+Shift+n exec $browser --private-window
+    bindsym $mod+n exec firefox
+    bindsym $mod+Shift+n exec firefox -P compatibility
     bindsym $mod+d exec $filemanager
-    bindsym $mod+F1 exec qimgv
 
     # Kill focused window
     bindsym $mod+Shift+q kill
