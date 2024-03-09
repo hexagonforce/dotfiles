@@ -35,7 +35,7 @@ export PATH
 
 # Aliases
 alias ll="exa -alh"
-alias ls="exa"
+alias ls="exa --icons -a --group-directories-first"
 alias mydotfiles="cd $HOME/projects/dotfiles"
 alias when="calcurse -Q"
 alias newsol="cp $HOME/Templates/template.cpp"
@@ -47,7 +47,11 @@ reboot_to_windows ()
     windows_title=$(grep -i windows /boot/grub/grub.cfg | cut -d "'" -f 2)
     sudo grub-reboot "$windows_title" && sudo reboot
 }
-alias reboot-to-windows='reboot_to_windows'
+
+lfcd () {
+    # `command` is needed in case `lfcd` is aliased to `lf`
+    cd "$(command lf -print-last-dir "$@")"
+}
 
 # Language
 export LANG=en_US.UTF-8
