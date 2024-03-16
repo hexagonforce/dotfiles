@@ -16,7 +16,6 @@ set $right l
 # Your preferred applications
 set $term foot
 set $browser firefox 
-set $filemanager dolphin
 
 default_border pixel 4
 default_floating_border none
@@ -87,10 +86,10 @@ input type:touchpad {
     dwt enabled
 }
 
-input * {
-    xkb_layout "us"
-    xkb_variant "colemak"
-    xkb_options "korean:ralt_hangul,korean:rctrl_hanja,caps:escape"
+input "type:keyboard" {
+    xkb_layout us
+    xkb_variant colemak
+    xkb_options korean:ralt_hangul,korean:rctrl_hanja,caps:escape
 }
 
 input 1132:49298:Logitech_G102_LIGHTSYNC_Gaming_Mouse_Keyboard {
@@ -106,7 +105,6 @@ input 1132:49298:Logitech_G102_LIGHTSYNC_Gaming_Mouse_Keyboard {
     bindsym $mod+Return exec $term
     bindsym $mod+n exec firefox
     bindsym $mod+Shift+n exec firefox -P compatibility
-    bindsym $mod+d exec $filemanager
 
     # Kill focused window
     bindsym $mod+Shift+q kill
@@ -316,20 +314,16 @@ bindsym $mod+m exec swaymsg '[app_id=$ddterm-id] scratchpad show' \
 #
 # Executions
 #
-set $gnome-schema org.gnome.desktop.interface
-# exec_always {
-#     gsettings set $gnome-schema gtk-theme 'Dracula'
-# }
-exec /usr/bin/kime
+exec --no-startup-id fcitx5 -d
 exec /home/syoo/.local/bin/pcloud
 exec wl-paste -t text --watch clipman store --no-persist
 exec gammastep -l 37.5:127
+exec --no-startup-id /usr/lib/kdeconnectd
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 exec dbus-update-activation-environment DISPLAY XAUTHORITY WAYLAND_DISPLAY
 exec gnome-keyring-daemon --start --components=secrets
 exec conky
 exec conky -c ~/.config/conky/conky2.conf
-exec /usr/share/kdeconnect
 
 set {
     $black      #282828
