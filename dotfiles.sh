@@ -1,7 +1,11 @@
 #! /usr/bin/zsh
 
 # Files inside the normal xdg .config directory
-xdg_dotfiles=("conky" "fcitx5" "foot" "git" "lf" "mpd" "mpv" "ncmpcpp" "nsxiv" "nvim" "sway" "waybar" "wofi" "ytfzf")
+xdg_dotfiles=( 
+    "alacritty" "conky" "fcitx5" "foot" "git" "lf" "mpd" "mpv" "ncmpcpp"
+    "newsboat" "nsxiv" "nvim" "qutebrowser" "sway" "ueberzugpp" "waybar" "wofi"
+    "ytfzf"
+)
 
 FIREFOX_DEFAULT_PROFILE_NAME=$(./find_default_firefox_profile.py)
 CONFIG_HOME=$HOME/.config

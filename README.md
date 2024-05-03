@@ -6,18 +6,23 @@
 - Python 3
 
 ## Applications configured
+- alacritty
 - conky
 - fcitx5 (with fcitx-hangul)
 - firefox
 - foot
 - git
+- kime
 - lf (chafa, sixel)
 - mpd
 - mpv
 - ncmpcpp
+- newsboat
 - nsxiv
 - nvim
+- qutebrowser
 - sway
+- ueberzugpp
 - waybar
 - wofi
 - ytfzf (ueberzugpp)
