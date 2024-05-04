@@ -9,16 +9,18 @@ settings:
   bindings.commands:
     global:
       normal:
+        ;a: hint links spawn --detach mpv {hint-url}
         ;c: hint images download
         H: tab-prev
         J: back
         K: forward
         L: tab-next
-        X: hint links spawn mpv {hint-url}
+        X: undo
         back: J
         d: scroll-px 0 600
         forward: K
         u: scroll-px 0 -600
+        undo: X
         x: tab-close
   content.notifications.enabled:
     https://programs.sbs.co.kr: false
@@ -27,4 +29,4 @@ settings:
   fonts.web.family.sans_serif:
     global: Noto Sans CJK KR
   hints.chars:
-    global: arstneiocmdhvk
+    global: arstneiocmdhfu

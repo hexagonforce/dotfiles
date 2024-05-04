@@ -36,12 +36,13 @@ map X !$f
 
 map r rename
 
-map on :set sortby natural; set info
+map on :set sortby natural; set info size
 map os :set sortby size; set info size
-map ot :set sortby time; set info time
-map oa :set sortby atime; set info atime
-map oc :set sortby ctime; set info ctime
+map ot :set sortby time; set reverse; set info time
+map oa :set sortby atime; set reverse; set info atime
+map oc :set sortby ctime; set reverse; set info ctime
 map oe :set sortby ext; set info
+map or :set reverse!
 
 # define a custom 'open' command
 # This command is called when current file is not a directory. You may want to
@@ -119,7 +120,8 @@ map . set hidden!
 set previewer ~/.config/lf/previewer.sh
 set cleaner ~/.config/lf/clear_img.sh
 
-set sortby time
-set info time
-set reverse!
+set hidden true
+set ignorecase true
+set sortby natural
+set info
 set dircounts true

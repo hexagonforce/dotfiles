@@ -1,5 +1,5 @@
 export QT_QPA_PLATFORM=wayland
-export GLFW_IM_MODULE=fcitx
+export GLFW_IM_MODULE=ibus
 export GTK_IM_MODULE=fcitx
 export QT_IM_MODULE=fcitx
 export XMODIFIERS=@im=fcitx

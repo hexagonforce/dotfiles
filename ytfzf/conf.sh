@@ -1,2 +1,3 @@
-load_thumbnail_viewer sixel
+load_thumbnail_viewer wayland
 show_thumbnails=1
+show_formats=1

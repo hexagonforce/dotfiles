@@ -6,6 +6,11 @@ export GOPATH="$HOME/.go"
 export GEM_HOME="$HOME/.gems/"
 export LYNX_CFG="$HOME/.config/lynx/lynx.cfg"
 export OPENER=xdg-open
+# Language
+export LANG=en_US.UTF-8
+export LC_COLLATE=C.UTF-8
+# ZSH HOME
+export ZSH=$HOME/.zsh
 
 PATH=$HOME/.local/texlive/2023/bin/x86_64-linux:$HOME/bin:/usr/local/bin:$PATH
 
@@ -53,15 +58,10 @@ lfcd () {
     cd "$(command lf -print-last-dir "$@")"
 }
 
-# Language
-export LANG=en_US.UTF-8
-export LC_COLLATE=C.UTF-8
-
-### ZSH HOME
-export ZSH=$HOME/.zsh
-
 ### ---- PLUGINS & THEMES -----------------------------------
 source $ZSH/themes/spaceship-prompt/spaceship.zsh-theme
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 #
 #### --- Spaceship Config ------------------------------------
 #
@@ -88,4 +88,3 @@ SAVEHIST=500
 HISTFILE=~/.zsh/history
 bindkey -v
 fastfetch
-

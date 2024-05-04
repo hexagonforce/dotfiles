@@ -14,8 +14,8 @@ set $down j
 set $up k
 set $right l
 # Your preferred applications
-set $term foot
-set $browser firefox 
+set $term alacritty
+set $browser qutebrowser
 
 default_border pixel 4
 default_floating_border none
@@ -97,13 +97,17 @@ input 1132:49298:Logitech_G102_LIGHTSYNC_Gaming_Mouse_Keyboard {
     pointer_accel 0.5
 }
 
+input 1133:16419:Logitech_Wireless_Keyboard_PID:4023 {
+    events disabled
+}
+
 ### Key bindings
 #
 # Basics:
 #
     # Commonly used programs
     bindsym $mod+Return exec $term
-    bindsym $mod+n exec firefox
+    bindsym $mod+n exec firefox -P default-release
     bindsym $mod+Shift+n exec firefox -P compatibility
 
     # Kill focused window
