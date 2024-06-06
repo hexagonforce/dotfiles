@@ -15,7 +15,8 @@ set $up k
 set $right l
 # Your preferred applications
 set $term alacritty
-set $browser qutebrowser
+set $browser firefox
+set $browser2 qutebrowser
 
 default_border pixel 4
 default_floating_border none
@@ -107,8 +108,8 @@ input 1133:16419:Logitech_Wireless_Keyboard_PID:4023 {
 #
     # Commonly used programs
     bindsym $mod+Return exec $term
-    bindsym $mod+n exec firefox -P default-release
-    bindsym $mod+Shift+n exec firefox -P compatibility
+    bindsym $mod+n exec $browser
+    bindsym $mod+Shift+n exec $browser2
 
     # Kill focused window
     bindsym $mod+Shift+q kill
@@ -326,8 +327,6 @@ exec --no-startup-id /usr/lib/kdeconnectd
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 exec dbus-update-activation-environment DISPLAY XAUTHORITY WAYLAND_DISPLAY
 exec gnome-keyring-daemon --start --components=secrets
-exec conky
-exec conky -c ~/.config/conky/conky2.conf
 
 set {
     $black      #282828

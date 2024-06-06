@@ -1,10 +1,8 @@
 # Variables
-
 export EDITOR=/usr/bin/nvim
 export VISUAL=/usr/bin/nvim
 export GOPATH="$HOME/.go"
 export GEM_HOME="$HOME/.gems/"
-export LYNX_CFG="$HOME/.config/lynx/lynx.cfg"
 export OPENER=xdg-open
 # Language
 export LANG=en_US.UTF-8
