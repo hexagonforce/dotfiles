@@ -9,6 +9,7 @@ settings:
   bindings.commands:
     global:
       normal:
+        '''': null
         ;a: hint links spawn --detach mpv {hint-url}
         ;c: hint images download
         H: tab-prev
