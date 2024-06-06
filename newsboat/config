@@ -1,4 +1,4 @@
-bind-key ' macro-prefix
 unbind-key ,
+bind-key , macro-prefix
 macro a set browser "mpv %u" ; open-in-browser ; set browser "elinks %u"
 
