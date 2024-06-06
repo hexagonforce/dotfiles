@@ -2,7 +2,7 @@
 
 # Files inside the normal xdg .config directory
 xdg_dotfiles=( 
-    "alacritty" "conky" "fcitx5" "foot" "git" "lf" "mpd" "mpv" "ncmpcpp"
+    "alacritty" "foot" "git" "lf" "mpd" "mpv" "ncmpcpp"
     "newsboat" "nsxiv" "nvim" "qutebrowser" "sway" "ueberzugpp" "waybar" "wofi"
     "ytfzf"
 )

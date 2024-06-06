@@ -7,13 +7,11 @@
 
 ## Applications configured
 - alacritty
-- conky
-- fcitx5 (with fcitx-hangul)
 - firefox
 - foot
 - git
 - kime
-- lf (chafa, sixel)
+- lf
 - mpd
 - mpv
 - ncmpcpp
@@ -25,7 +23,7 @@
 - ueberzugpp
 - waybar
 - wofi
-- ytfzf (ueberzugpp)
+- ytfzf
 - zsh
 
 ## Usage
